@@ -26,8 +26,18 @@ class Model {
                 return
             }
             
-            print(data!)
-            print("success")
+            do {
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
+                let response = try decoder.decode(Response.self, from: data!)
+                dump(response)
+                print(data!)
+                print("success")
+            } catch {
+                print(error)
+            }
+            
+            
         }
         
         task.resume()
