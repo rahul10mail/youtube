@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E482D1CE24F7389D004BA231 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E482D1CD24F7389D004BA231 /* VideoTableViewCell.swift */; };
+		E482D1D524F74CF3004BA231 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E482D1D424F74CF3004BA231 /* CacheManager.swift */; };
 		E4DB31B124F5ED500040A598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DB31B024F5ED500040A598 /* AppDelegate.swift */; };
 		E4DB31B324F5ED500040A598 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DB31B224F5ED500040A598 /* SceneDelegate.swift */; };
 		E4DB31B524F5ED500040A598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DB31B424F5ED500040A598 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E482D1CD24F7389D004BA231 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		E482D1D424F74CF3004BA231 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		E4DB31AD24F5ED500040A598 /* youtube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = youtube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4DB31B024F5ED500040A598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4DB31B224F5ED500040A598 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +33,7 @@
 		E4DB31B924F5ED510040A598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4DB31BC24F5ED510040A598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4DB31BE24F5ED510040A598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E4DB31C424F6198A0040A598 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E4DB31C424F6198A0040A598 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
 		E4DB31C624F61BC60040A598 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		E4DB31C824F61DCF0040A598 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		E4DB31CA24F6280C0040A598 /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E482D1CF24F738CA004BA231 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E4DB31B624F5ED500040A598 /* Main.storyboard */,
+				E4DB31BB24F5ED510040A598 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E482D1D024F738FF004BA231 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E4DB31C624F61BC60040A598 /* Video.swift */,
+				E4DB31C824F61DCF0040A598 /* Model.swift */,
+				E4DB31CC24F65A6F0040A598 /* Response.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E482D1D124F7391C004BA231 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E482D1CD24F7389D004BA231 /* VideoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E482D1D224F73934004BA231 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E4DB31B424F5ED500040A598 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E482D1D324F739D0004BA231 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E4DB31C424F6198A0040A598 /* Constants.swift */,
+				E4DB31CA24F6280C0040A598 /* ConstantsTemplate.swift */,
+				E482D1D424F74CF3004BA231 /* CacheManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		E4DB31A424F5ED500040A598 = {
 			isa = PBXGroup;
 			children = (
@@ -68,16 +117,13 @@
 			children = (
 				E4DB31B024F5ED500040A598 /* AppDelegate.swift */,
 				E4DB31B224F5ED500040A598 /* SceneDelegate.swift */,
-				E4DB31B424F5ED500040A598 /* ViewController.swift */,
-				E4DB31B624F5ED500040A598 /* Main.storyboard */,
+				E482D1D324F739D0004BA231 /* Helpers */,
+				E482D1D224F73934004BA231 /* Controllers */,
+				E482D1D124F7391C004BA231 /* Views */,
+				E482D1D024F738FF004BA231 /* Models */,
+				E482D1CF24F738CA004BA231 /* Storyboards */,
 				E4DB31B924F5ED510040A598 /* Assets.xcassets */,
-				E4DB31BB24F5ED510040A598 /* LaunchScreen.storyboard */,
 				E4DB31BE24F5ED510040A598 /* Info.plist */,
-				E4DB31C424F6198A0040A598 /* Constants.swift */,
-				E4DB31CA24F6280C0040A598 /* ConstantsTemplate.swift */,
-				E4DB31C624F61BC60040A598 /* Video.swift */,
-				E4DB31C824F61DCF0040A598 /* Model.swift */,
-				E4DB31CC24F65A6F0040A598 /* Response.swift */,
 			);
 			path = youtube;
 			sourceTree = "<group>";
@@ -159,8 +205,10 @@
 				E4DB31B124F5ED500040A598 /* AppDelegate.swift in Sources */,
 				E4DB31B324F5ED500040A598 /* SceneDelegate.swift in Sources */,
 				E4DB31C924F61DCF0040A598 /* Model.swift in Sources */,
+				E482D1D524F74CF3004BA231 /* CacheManager.swift in Sources */,
 				E4DB31C524F6198A0040A598 /* Constants.swift in Sources */,
 				E4DB31C724F61BC60040A598 /* Video.swift in Sources */,
+				E482D1CE24F7389D004BA231 /* VideoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
