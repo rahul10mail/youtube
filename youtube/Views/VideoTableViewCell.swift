@@ -54,7 +54,7 @@ class VideoTableViewCell: UITableViewCell {
         let session = URLSession.shared
         let task = session.dataTask(with: url!) { (data, response, error) in
             if error == nil && data != nil {
-                CacheManager.setVideoCache(url!.absoluteString, data)
+                CacheManager.setVideoCache(url!.absoluteString, data )
                 if url!.absoluteString != self.video?.thumbnail {
                     return
                 }
